@@ -1,0 +1,332 @@
+/* Global Styles for Hero Carousel */
+.hero-carousel-wrapper {
+  padding-top: 80px; /* Adjust this value to match the Navbar height */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  list-style: none;
+  z-index: 15; /* Ensures dots are above other elements */
+}
+
+.slick-dots li {
+  margin: 0 0.5rem;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #e74c3c;
+}
+
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images don't distort */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Gradient background */
+  color: white;
+  padding: 4rem;
+  text-align: left;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+.hero-overlay p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding text shadow for better visibility */
+}
+
+.hero-overlay h1 {
+  font-size: 3.5rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding text shadow for better visibility */
+}
+
+.hero-overlay button {
+  padding: 0.75rem 2rem;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add subtle shadow to the button */
+}
+
+.hero-overlay button:hover {
+  background-color: white;
+  color: #e74c3c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+}
+
+.hero-overlay button:focus {
+  outline: 2px solid #e74c3c;
+}
+
+.hero-overlay button:active {
+  transform: translateY(2px);
+}
+
+/* Custom Cursive Fonts for Each Slide */
+.slide1-title {
+  font-family: 'Dancing Script', cursive;
+}
+
+.slide1-heading {
+  font-family: 'Pacifico', cursive;
+}
+
+.slide2-title {
+  font-family: 'Lobster', cursive;
+}
+
+.slide2-heading {
+  font-family: 'Sacramento', cursive;
+}
+
+.slide3-title {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.slide3-heading {
+  font-family: 'Great Vibes', cursive;
+}
+
+.slide4-title {
+  font-family: 'Alex Brush', cursive;
+}
+
+.slide4-heading {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.slide5-title {
+  font-family: 'Allura', cursive;
+}
+
+.slide5-heading {
+  font-family: 'Dancing Script', cursive;
+}
+
+.slide6-title {
+  font-family: 'Satisfy', cursive;
+}
+
+.slide6-heading {
+  font-family: 'Rock Salt', cursive;
+}
+
+/* Custom HR styles for each slide */
+.custom-hr {
+  border: 0;
+  height: 2px;
+  margin: 1rem 0;
+  width: 50%; /* Adjust the width as needed */
+  background: linear-gradient(to right, #e74c3c 0%, #f39c12 100%); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow around HR */
+  position: relative;
+}
+
+.custom-hr:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #e74c3c; /* Circular effect on the left side */
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-hr:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f39c12; /* Circular effect on the right side */
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Specific HR styles for each slide */
+.custom-hr.slide1-hr {
+  width: 60%;
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hr.slide2-hr {
+  width: 55%;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hr.slide3-hr {
+  width: 50%;
+  background: linear-gradient(to right, #2ecc71, #27ae60);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hr.slide4-hr {
+  width: 45%;
+  background: linear-gradient(to right, #f39c12, #e67e22);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hr.slide5-hr {
+  width: 60%;
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-hr.slide6-hr {
+  width: 65%;
+  background: linear-gradient(to right, #9b59b6, #8e44ad);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles */
+
+/* Mobile (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hero-slide {
+    height: 50vh;
+  }
+
+  .hero-overlay {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .hero-overlay button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .custom-hr {
+    width: 70%; /* Wider HR for small screens */
+    height: 3px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero-slide {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .hero-overlay button {
+    padding: 0.6rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .custom-hr {
+    width: 65%;
+    height: 2.5px;
+  }
+}
+
+/* Small Desktop (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-slide {
+    height: 70vh;
+  }
+
+  .hero-overlay {
+    padding: 4rem;
+    align-items: flex-start;
+  }
+
+  .hero-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+
+  .hero-overlay button {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .custom-hr {
+    width: 60%;
+    height: 2px;
+  }
+}

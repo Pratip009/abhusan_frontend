@@ -20,7 +20,7 @@ import Offers from './pages/Offers'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <div className='px-2 sm:px-[3vw] md:px-[5vw] lg:px-[0vw]'>
       <ToastContainer />
       <Navbar />
       <SearchBar />

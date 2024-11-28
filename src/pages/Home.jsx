@@ -4,7 +4,7 @@ import BestSeller from "../components/BestSeller";
 import OurPolicy from "../components/OurPolicy";
 import NewsletterBox from "../components/NewsletterBox";
 import OverView from "../components/OverView";
-import MissionStatement from "../components/MissionStatement";
+// import MissionStatement from "../components/MissionStatement";
 import Testimonials from "../components/Testimonials";
 
 
@@ -15,7 +15,7 @@ const Home = () => {
       <OverView />
       <LatestCollection />
       <BestSeller />
-      <MissionStatement />
+      {/* <MissionStatement /> */}
       <Testimonials />
       <OurPolicy />
       <NewsletterBox />
